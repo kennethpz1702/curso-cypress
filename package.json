@@ -2,10 +2,10 @@
   "name": "curso-cypress",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "index.js", 
   "scripts": {
     "limpiar-reporte": "rimraf ./allure-report && rimraf ./allure-results",
-    "ejecutar-pruebas": "cypress run --headed --env allure=true",
+    "ejecutar-pruebas": "cypress run --browser edge --headed --env allure=true",
     "generar-reporte": "npx allure generate allure-results -o allure-report --clean",
     "abrir-reporte": "npx allure open",
     "test": "npm run limpiar-reporte && npm run ejecutar-pruebas && npm run generar-reporte && npm run abrir-reporte"
